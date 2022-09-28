@@ -1,0 +1,276 @@
+/* ======= Header is Start Here ========= */
+.header {
+  width: 100%;
+  float: left;
+  padding: 5px;
+  background: var(--darkGray);
+}
+
+.header .logo {
+  width: 70px;
+}
+
+.header .logo img {
+  width: 100%;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav a {
+  color: var(--orange);
+  padding: 3px 15px;
+  transition: .5s;
+  position: relative;
+}
+
+.header .nav a:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--orange);
+  left: 0;
+  bottom: 0;
+  transition: .5s;
+  animation: HoverEffect .2s ease-in;
+}
+
+.active {
+  background-color: #ff573342;
+  padding: 5px 15px;
+}
+
+.header .nav a {
+  margin: 0 5px;
+}
+
+.header .nav ul {
+  display: flex;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav a svg {
+  font-size: 20px;
+  margin: 5px 2px 0 0;
+}
+
+.header .nav .after_cart {
+  position: relative;
+}
+
+.header .nav .after_cart::after {
+  content: attr(cart);
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+/* ======= Header is End Here ========= */
+
+/* ======= Category is Start Here ========= */
+.category {
+  width: 100%;
+  float: left;
+  padding: 50px 0;
+  background: var(--lightColor);
+}
+
+.category .prod_card .img img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.category .prod_card .img {
+  width: 100%;
+  background: #fff;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.category .prod_card h3 {
+  margin-top: 10px;
+  color: var(--orange);
+  font-size: 1rem;
+}
+
+.category .prod_card {
+  margin: 0 20px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: -1;
+}
+
+.category .react-multi-carousel-list {
+  padding: 0 0 50px 0;
+}
+
+.category .react-multi-carousel-dot--active button {
+  background: var(--orange) !important;
+}
+
+.category .react-multi-carousel-dot-list li button {
+  background-color: var(--darkGray);
+  border: none;
+}
+
+/* ======= Category is End Here ========= */
+
+/* ======= Product is Start Here ========= */
+.product {
+  width: 100%;
+  float: left;
+  padding: 50px 0;
+}
+
+.product .head h2 {
+  color: var(--orange);
+}
+
+.product .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ======= Product is End Here ========= */
+
+
+/* ======= Error Page is Start Here ========= */
+.error_Page {
+  width: 100%;
+  height: 80vh;
+  float: left;
+}
+
+.error_Page .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error_Page .globalBtnFill {
+  margin-top: 20px;
+}
+
+.error_Page .content {
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  padding: 70px 0;
+  background: #f6f6f6;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.error_Page .content h1 {
+  color: var(--orange);
+  margin-bottom: 10px;
+}
+
+.error_Page .content p {
+  color: var(--lightGray);
+}
+
+/* ======= Error Page is End Here ========= */
+
+
+
+
+
+
+
+
+
+/* ======= Responsive is Start Here ========= */
+/* Tablate 768px width  */
+@media (max-width: 768px) {
+  .header .nav a {
+    padding: 3px 10px;
+  }
+
+  .header .logo {
+    width: 60px;
+  }
+}
+
+/* Tablate 560px width  */
+@media (max-width: 560px) {
+  .header {
+    padding: 0 0;
+  }
+
+  .header .nav .menu {
+    transition: .5s;
+    position: absolute;
+    background-color: #fff;
+    width: 70%;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .header .nav .showMenu {
+    right: 0 !important;
+  }
+
+  .header .nav .menu li {
+    margin-top: 10px;
+  }
+
+  .header .nav .menu li a {
+    font-size: 20px;
+  }
+
+  .header .nav a {
+    padding: 3px 7px;
+  }
+
+  .mobileMenu {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    z-index: 999999;
+  }
+
+  .mobileMenu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--orange);
+    margin-bottom: 10px;
+  }
+
+  .mobileMenu span:last-child {
+    margin-bottom: 0;
+  }
+
+  .header .nav .cartHere {
+    padding: 3px 15px;
+  }
+
+}
+
+/* ======= Responsive is End Here ========= */

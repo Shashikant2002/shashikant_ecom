@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --white: #ffffff;
+  --orange: #FF5733;
+  --lightColor: #eeeeee;
+  --darkGray: #cacaca;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0  10px;
+}
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+.globalBtnFill{
+  background-color: var(--orange);
+  color: var(--white) !important;
+  padding: 5px 10px !important;
+  border-radius: 5px;
+  margin-bottom: 5px !important;
+  display: inline-block;
+}
+.borderBtn{
+  color: var(--orange);
+  font-weight: 500;
+  border: 1px solid var(--orange);
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+/* ====== Key Frame Start Here ========= */
+@keyframes HoverEffect {
+  0%{width: 0%;}
+  100%{width: 100%;}
+}
+/* ====== Key Frame Start Here ========= */
