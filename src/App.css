@@ -275,6 +275,90 @@
 
 /* ======= banner_content is End Here ========= */
 
+/* ======= Trusted_content is Start Here ========= */
+.treastedComp{
+  width: 100%;
+  float: left;
+  padding: 50px 0;
+  background-color: var(--lightColor);
+}
+.treastedComp .compenies img{
+  width: 200px;
+  margin: 10px 20px;
+}
+.treastedComp .compenies{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.treastedComp h2{
+  color: var(--orange);
+}
+/* ======= Trusted_content is End Here ========= */
+
+/* ======= our Services is Start Here ========= */
+.ourServices{
+  width: 100%;
+  float: left;
+  padding: 50px 0;
+}
+.ourServices h2{
+  color: var(--orange);
+}
+.ourServices .services .serve svg{
+  font-size: 5rem;
+  color: var(--orange);
+}
+.ourServices .services .serve h5{
+  color: var(--orange);
+}
+.ourServices .services .center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+
+
+.ourServices .services .center .center_serve h5{
+  color: var(--orange);
+}
+.ourServices .services .center .center_serve svg{
+  font-size: 50px;
+  margin-right: 10px;
+  color: var(--orange);
+}
+.ourServices .services .center .center_serve{
+  height: 50%;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.ourServices .services .center .center_serve:first-child{
+  margin-bottom: 20px;
+}
+.ourServices .services .serve{
+  margin: 0 20px;
+  padding: 50px;
+  text-align: center;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.ourServices .services{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* ======= our Services is End Here ========= */
+
 
 /* ======= Error Page is Start Here ========= */
 .error_Page {
@@ -311,7 +395,7 @@
 }
 
 .error_Page .content p {
-  color: var(--lightGray);
+  color: var(--fontGray);
 }
 
 /* ======= Error Page is End Here ========= */
@@ -439,6 +523,19 @@
   .banner_content .container .content {
     padding-right: 0;
   }
+  .ourServices .services .center_serve{
+    padding: 50px 0;
+  }
+  .ourServices .services .serve{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .ourServices .services .center{
+    width: 100%;
+  }
+  .treastedComp .compenies {
+    justify-content: center;
+}
 }
 
 /* ======= Responsive is End Here ========= */
