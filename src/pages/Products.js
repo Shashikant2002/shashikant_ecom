@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import BannerContent from "../components/BannerContent";
+import ProductCard from "../components/ProductCard";
 
 const Products = () => {
   return (
     <>
-        <h1>Products</h1> 
+      <BannerContent title="Products" />
+      <div className="product">
+        <div className="container">
+          <div className="allProd">
+            <ProductCard />
+          </div>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

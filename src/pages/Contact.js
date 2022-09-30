@@ -1,9 +1,10 @@
 import React from 'react'
+import BannerContent from '../components/BannerContent'
 
 const Contact = () => {
   return (
     <>
-        <h1>Contact Us</h1> 
+        <BannerContent title="Contact Us" />
     </>
   )
 }

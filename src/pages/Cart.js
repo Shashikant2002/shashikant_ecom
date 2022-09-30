@@ -1,9 +1,10 @@
 import React from 'react'
+import BannerContent from '../components/BannerContent'
 
 const Cart = () => {
   return (
     <>
-      <h1>Cart</h1>
+      <BannerContent title="Cart Section" />
     </>
   )
 }

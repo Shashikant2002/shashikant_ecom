@@ -1,9 +1,10 @@
 import React from 'react'
+import BannerContent from '../components/BannerContent'
 
 const About = () => {
   return (
     <>
-        <h1>About Us</h1> 
+        <BannerContent title="About Us" />
     </>
   )
 }

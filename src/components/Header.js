@@ -50,6 +50,9 @@ const Header = () => {
                 <NavLink onClick={() => closeMenu()} to="/product">Products</NavLink>
               </li>
               <li>
+                <NavLink onClick={() => closeMenu()} to="/category">Categories</NavLink>
+              </li>
+              <li>
                 <NavLink onClick={() => closeMenu()} to="/contact">Contact</NavLink>
               </li>
             </ul>

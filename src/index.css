@@ -17,10 +17,13 @@ code {
 :root {
   --white: #ffffff;
   --orange: #FF5733;
-  --lightColor: #eeeeee;
-  --darkGray: #cacaca;
+  --lightColor: #f7f7f7;
+  --darkGray: #f1f1f1;
+  --fontGray: #959191;
 }
-
+p{
+  color: var(--fontGray);
+}
 a{
   text-decoration: none;
 }
@@ -47,10 +50,12 @@ body{
 .globalBtnFill{
   background-color: var(--orange);
   color: var(--white) !important;
-  padding: 5px 10px !important;
+  padding: 5px 10px;
   border-radius: 5px;
-  margin-bottom: 5px !important;
+  margin-bottom: 5px;
   display: inline-block;
+  cursor: pointer;
+  border: none;
 }
 .borderBtn{
   color: var(--orange);
