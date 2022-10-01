@@ -24,6 +24,9 @@ code {
 p{
   color: var(--fontGray);
 }
+h3{
+  color: var(--orange);
+}
 a{
   text-decoration: none;
 }

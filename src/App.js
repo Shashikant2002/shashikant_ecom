@@ -9,6 +9,7 @@ import Cart from "./pages/Cart";
 import ErrorPage from "./pages/ErrorPage";
 import Header from "./components/Header";
 import Categories from "./pages/Categories";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/singleProduct:id" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

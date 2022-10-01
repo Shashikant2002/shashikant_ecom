@@ -276,45 +276,53 @@
 /* ======= banner_content is End Here ========= */
 
 /* ======= Trusted_content is Start Here ========= */
-.treastedComp{
+.treastedComp {
   width: 100%;
   float: left;
   padding: 50px 0;
   background-color: var(--lightColor);
 }
-.treastedComp .compenies img{
+
+.treastedComp .compenies img {
   width: 200px;
   margin: 10px 20px;
 }
-.treastedComp .compenies{
+
+.treastedComp .compenies {
   margin-top: 20px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.treastedComp h2{
+
+.treastedComp h2 {
   color: var(--orange);
 }
+
 /* ======= Trusted_content is End Here ========= */
 
 /* ======= our Services is Start Here ========= */
-.ourServices{
+.ourServices {
   width: 100%;
   float: left;
   padding: 50px 0;
 }
-.ourServices h2{
+
+.ourServices h2 {
   color: var(--orange);
 }
-.ourServices .services .serve svg{
+
+.ourServices .services .serve svg {
   font-size: 5rem;
   color: var(--orange);
 }
-.ourServices .services .serve h5{
+
+.ourServices .services .serve h5 {
   color: var(--orange);
 }
-.ourServices .services .center{
+
+.ourServices .services .center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,15 +331,17 @@
 }
 
 
-.ourServices .services .center .center_serve h5{
+.ourServices .services .center .center_serve h5 {
   color: var(--orange);
 }
-.ourServices .services .center .center_serve svg{
+
+.ourServices .services .center .center_serve svg {
   font-size: 50px;
   margin-right: 10px;
   color: var(--orange);
 }
-.ourServices .services .center .center_serve{
+
+.ourServices .services .center .center_serve {
   height: 50%;
   border-radius: 10px;
   width: 100%;
@@ -340,10 +350,12 @@
   justify-content: center;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
-.ourServices .services .center .center_serve:first-child{
+
+.ourServices .services .center .center_serve:first-child {
   margin-bottom: 20px;
 }
-.ourServices .services .serve{
+
+.ourServices .services .serve {
   margin: 0 20px;
   padding: 50px;
   text-align: center;
@@ -351,13 +363,116 @@
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
-.ourServices .services{
+
+.ourServices .services {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 /* ======= our Services is End Here ========= */
+
+/* ======= contactForm is Start Here ========= */
+.contactForm {
+  padding: 50px 0;
+  width: 100%;
+  float: left;
+}
+
+.contactForm .container form input {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid var(--fontGray);
+  outline: none;
+  margin-top: 20px;
+}
+
+.contactForm .container form button {
+  margin-top: 20px;
+  padding: 10px 50px;
+}
+
+.contactForm .container form textarea {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid var(--fontGray);
+  outline: none;
+  margin-top: 20px;
+}
+
+.contactForm h2 {
+  color: var(--orange);
+}
+
+.contactForm .container form {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.contactForm .container {
+  text-align: center;
+}
+
+/* ======= contactForm is End Here ========= */
+
+/* ======= Footer is Start Here ========= */
+.footer {
+  width: 100%;
+  float: left;
+  padding: 50px 0 20px 0;
+  background: var(--darkGray);
+}
+
+.footer .content img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .container>div:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.footer .container>div:last-child {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.footer .container>div {
+  margin: 0 20px;
+  padding: 20px;
+  width: 30%;
+}
+.footer .quickLinks ul li a{
+  color: var(--orange);
+  padding: 5px 15px;
+  display: inline-block;
+}
+.footer .quickLinks ul li{
+  display: block;
+  margin-top: 5px;
+}
+.footer div h4{
+  color: var(--orange);
+}
+.footer div h3{
+  margin-bottom: 20px;
+}
+
+/* ======= Footer is End Here ========= */
 
 
 /* ======= Error Page is Start Here ========= */
@@ -399,14 +514,6 @@
 }
 
 /* ======= Error Page is End Here ========= */
-
-
-
-
-
-
-
-
 
 /* ======= Responsive is Start Here ========= */
 /* Tablate 768px width  */
@@ -523,19 +630,34 @@
   .banner_content .container .content {
     padding-right: 0;
   }
-  .ourServices .services .center_serve{
+
+  .ourServices .services .center_serve {
     padding: 50px 0;
   }
-  .ourServices .services .serve{
+
+  .ourServices .services .serve {
     width: 100%;
     margin: 20px 0;
   }
-  .ourServices .services .center{
+
+  .ourServices .services .center {
     width: 100%;
   }
+
   .treastedComp .compenies {
     justify-content: center;
-}
+  }
+
+  .footer .container>div {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid red;
+    margin: 10px 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
 }
 
 /* ======= Responsive is End Here ========= */
