@@ -19,6 +19,8 @@ const Header = () => {
 
   const openMenu = () => {
     const menu = document.getElementById('menu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.toggle('closeTogle');
     menu.classList.toggle('showMenu');
   }
   
@@ -62,7 +64,7 @@ const Header = () => {
                 <FaShoppingCart />
               </span>
             </NavLink>
-            <div onClick={() => openMenu()} className="mobileMenu">
+            <div onClick={() => openMenu()} id="mobileMenu" className="mobileMenu">
               <span></span>
               <span></span>
               <span></span>
