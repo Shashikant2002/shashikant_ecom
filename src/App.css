@@ -627,7 +627,7 @@
   .header .container .closeTogle span:last-child{
     transition: .5s;
     transform: rotate(135deg);
-    margin-top: -23px;
+    margin-top: -25px;
   }
   .mobileMenu span {
     transition: .5s;
