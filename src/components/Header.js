@@ -25,6 +25,8 @@ const Header = () => {
   }
   
   const closeMenu = () => {
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.remove('closeTogle');
     const menu = document.getElementById('menu');
     menu.classList.remove('showMenu');
   }
