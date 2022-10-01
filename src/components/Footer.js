@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { MdCall } from 'react-icons/md';
+import { MdCall } from "react-icons/md";
+import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -45,12 +46,39 @@ const Footer = () => {
           </div>
           <div className="subscribe">
             <h3>Subscribe for Update</h3>
+            <form action="">
+                <input type="email" name="e-mail" placeholder="Your E-Mail" />
+                <button type="submit" className="globalBtnFill">Subscribe Now</button>
+            </form>
           </div>
           <div className="contact">
             <h3>Follow Now</h3>
-            
+            <div className="socal">
+              <span>
+                <a href="/">
+                  <BsInstagram />
+                </a>
+              </span>
+              <span>
+                <a href="/">
+                  <BsInstagram />
+                </a>
+              </span>
+              <span>
+                <a href="/">
+                  <BsInstagram />
+                </a>
+              </span>
+              <span>
+                <a href="/">
+                  <BsInstagram />
+                </a>
+              </span>
+            </div>
             <h3>Call Us</h3>
-            <h4><MdCall /> 9643510696</h4>
+            <div className="call">
+              <MdCall /> <h4>9643510696</h4>
+            </div>
           </div>
         </div>
       </div>
