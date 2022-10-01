@@ -10,8 +10,18 @@ import ErrorPage from "./pages/ErrorPage";
 import Header from "./components/Header";
 import Categories from "./pages/Categories";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const allA = document.querySelectorAll("a");
+    for (let i = 0; i < allA.length; i++) {
+      allA[i].addEventListener('click', function(){
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0; 
+      })
+    }
+  }, []);
   return (
     <>
       <BrowserRouter>
