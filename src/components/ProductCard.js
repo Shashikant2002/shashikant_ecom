@@ -1,226 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useProductContext } from "../context/productContext";
+
 
 const ProductCard = () => {
+  const { featureProducts, product, isLoading } = useProductContext();
+  console.log(featureProducts, product, isLoading)
   return (
     <>
       <div className="allProd">
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="prodCard">
-            <div className="img">
-              <img
-                src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                alt=""
-              />
-            </div>
-            <div className="content">
-              <h3>Hello This is Product Name</h3>
-              <div className="star">⭐⭐⭐⭐⭐</div>
-              <p>
-                <strike>5000</strike>
-              </p>
-              <h4>₹2000</h4>
-            </div>
-          </div>
-        </Link>
+        {
+          product.map((curEle, index) => {
+            return (
+              <Link key={index} to="/product">
+                <div className="prodCard">
+                  <div className="img">
+                    <img
+                      src={curEle.image}
+                      alt={curEle.name}
+                    />
+                  </div>
+                  <div className="content">
+                    <h3>{curEle.name}</h3>
+                    <div className="star">{"👩🏾‍🤝‍🧑🏾".repeat(4)}</div>
+                    <p>
+                      <strike>₹{curEle.price + 1000}</strike>
+                    </p>
+                    <h4>₹{curEle.price}</h4>
+                  </div>
+                </div>
+              </Link>
+            )
+          })
+        }
+
       </div>
     </>
   );

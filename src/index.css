@@ -58,8 +58,8 @@ body{
   border-radius: 5px;
   margin-bottom: 5px;
   display: inline-block;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 }
 .borderBtn{
   color: var(--orange);
@@ -67,6 +67,22 @@ body{
   border: 1px solid var(--orange);
   padding: 4px 10px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.Loading{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+  position: fixed;
 }
 
 /* ====== Key Frame Start Here ========= */

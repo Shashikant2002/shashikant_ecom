@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FeatureProduct = ({data, i}) => {
     return (
-        <Link key={i} to="/">
+        <Link to="/">
             <div className="prod_card">
                 <div className="img">
                     <img    
@@ -12,7 +12,7 @@ const FeatureProduct = ({data, i}) => {
                     />
                 </div>
                 <h3>{data.name}</h3>
-                <p>{data.description}</p>
+                <p>{data.description.slice(0, 100)}...</p>
                 <button className='borderBtn'>View More</button>
             </div>
         </Link>

@@ -8,6 +8,7 @@ import TreastedCom from "../components/TreastedCom";
 import OurServices from "./OurServices";
 import { useProductContext } from "../context/productContext";
 import FeatureProduct from "../components/FeatureProduct";
+import Loading from "../components/Loading";
 
 
 const responsive = {
@@ -30,8 +31,10 @@ const responsive = {
 };
 
 const Home = () => {
-  const { featureProducts, product, isLoading } = useProductContext();
-  console.log(featureProducts, product, isLoading)
+  const { featureProducts, isLoading } = useProductContext();
+  if(isLoading){
+    return <Loading />
+  }
   return (
     <>
       <BannerContent title="E-Commerce" />
@@ -55,7 +58,12 @@ const Home = () => {
 
             {
               featureProducts.map((curEle, index) => {
-                return <FeatureProduct i={index} data={curEle} />
+                return <FeatureProduct key={index} data={curEle} />
+              })
+            }
+            {
+              featureProducts.map((curEle, index) => {
+                return <FeatureProduct key={index} data={curEle} />
               })
             }
 
