@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import TreastedCom from "../components/TreastedCom";
 import OurServices from "./OurServices";
+import { useProductContext } from "../context/productContext";
 
 const responsive = {
   superLargeDesktop: {
@@ -27,14 +28,17 @@ const responsive = {
 };
 
 const Home = () => {
+  const name = useProductContext();
+
   return (
     <>
+      <h1>{name}</h1>
       <BannerContent title="E-Commerce" />
 
       <div className="category">
         <div className="container">
           <div className="head">
-            <h2>All Category</h2>
+            <h2>Feature Product</h2>
             <Link to="/category">
               <h3 className="borderBtn">View All</h3>
             </Link>
