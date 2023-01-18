@@ -12,7 +12,7 @@ const ProductReducer = (state, action) => {
                 ...state,
                 isLoading: false, 
                 isError: false,
-                produc: action.payload,
+                product: action.payload,
                 featureProducts: featureProducts
             }
 

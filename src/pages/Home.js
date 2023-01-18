@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import TreastedCom from "../components/TreastedCom";
 import OurServices from "./OurServices";
 import { useProductContext } from "../context/productContext";
+import FeatureProduct from "../components/FeatureProduct";
+
 
 const responsive = {
   superLargeDesktop: {
@@ -28,11 +30,10 @@ const responsive = {
 };
 
 const Home = () => {
-  const name = useProductContext();
-
+  const { featureProducts, product, isLoading } = useProductContext();
+  console.log(featureProducts, product, isLoading)
   return (
     <>
-      <h1>{name}</h1>
       <BannerContent title="E-Commerce" />
 
       <div className="category">
@@ -51,50 +52,13 @@ const Home = () => {
             autoPlaySpeed={3000}
             autoPlay={true}
           >
-            <Link to="/">
-              <div className="prod_card">
-                <div className="img">
-                  <img
-                    src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                    alt=""
-                  />
-                </div>
-                <h3>Hello This is Category</h3>
-              </div>
-            </Link>
-            <Link to="/">
-              <div className="prod_card">
-                <div className="img">
-                  <img
-                    src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                    alt=""
-                  />
-                </div>
-                <h3>Hello This is Category</h3>
-              </div>
-            </Link>
-            <Link to="/">
-              <div className="prod_card">
-                <div className="img">
-                  <img
-                    src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                    alt=""
-                  />
-                </div>
-                <h3>Hello This is Category</h3>
-              </div>
-            </Link>
-            <Link to="/">
-              <div className="prod_card">
-                <div className="img">
-                  <img
-                    src="https://m.media-amazon.com/images/I/81BxHYjeA2L._SX679_.jpg"
-                    alt=""
-                  />
-                </div>
-                <h3>Hello This is Category</h3>
-              </div>
-            </Link>
+
+            {
+              featureProducts.map((curEle, index) => {
+                return <FeatureProduct i={index} data={curEle} />
+              })
+            }
+
           </Carousel>
         </div>
       </div>

@@ -103,10 +103,17 @@
   z-index: -1;
 }
 
+.category .prod_card button{
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+.category .prod_card p{
+  margin-top: 10px;
+}
 .category .prod_card h3 {
   margin-top: 10px;
   color: var(--orange);
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .category .prod_card {
