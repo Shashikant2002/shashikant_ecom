@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useProductContext } from "../context/productContext";
+import Loading from "./Loading";
 
 
 const ProductCard = () => {
-  const { featureProducts, product, isLoading } = useProductContext();
-  console.log(featureProducts, product, isLoading)
+  const { product, isLoading } = useProductContext();
+
+  if(isLoading){
+    return <Loading />
+  }
   return (
     <>
       <div className="allProd">
         {
           product.map((curEle, index) => {
             return (
-              <Link key={index} to="/product">
+              <Link key={index}to={`/product/${curEle.id}`}>
                 <div className="prodCard">
                   <div className="img">
                     <img
@@ -31,7 +35,7 @@ const ProductCard = () => {
                 </div>
               </Link>
             )
-          })
+          }).slice(0, 8)
         }
 
       </div>

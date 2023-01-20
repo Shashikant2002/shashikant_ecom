@@ -3,7 +3,7 @@ import BannerContent from "../components/BannerContent";
 import ProductCard from "../components/ProductCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import TreastedCom from "../components/TreastedCom";
 import OurServices from "./OurServices";
 import { useProductContext } from "../context/productContext";
@@ -31,7 +31,13 @@ const responsive = {
 };
 
 const Home = () => {
+  
+  
   const { featureProducts, isLoading } = useProductContext();
+  
+
+
+
   if(isLoading){
     return <Loading />
   }

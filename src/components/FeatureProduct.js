@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FeatureProduct = ({data, i}) => {
     return (
-        <Link to="/">
+        <Link to={`/product/${data.id}`}>
             <div className="prod_card">
                 <div className="img">
                     <img    

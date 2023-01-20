@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import Categories from "./pages/Categories";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
+import Product from "./components/Product";
 
 function App() {
   useEffect(() => {
@@ -22,7 +23,9 @@ function App() {
       })
     }
   }, []);
+  
   return (
+    
     <>
       <BrowserRouter>
         <Header />
@@ -35,6 +38,9 @@ function App() {
           <Route path="/category" element={<Categories />} />
           <Route path="/singleProduct:id" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
+
+
+          <Route path="/product/:proId" element={<Product />} />
         </Routes>
         <Footer />
       </BrowserRouter>
