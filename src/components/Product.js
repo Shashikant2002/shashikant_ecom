@@ -1,18 +1,19 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
 import { useProductContext } from '../context/productContext';
+import { useParams } from 'react-router-dom';
 import Loading from './Loading';
 
 
 const Product = () => {
   const { proId } = useParams();
-  const { product, featureProducts, isLoading } = useProductContext();
+  const { product, isLoading } = useProductContext();
+  console.log(product)
+
   if (isLoading) {
     return <Loading />
   }
 
-  let curPro = product.filter((curEle) => {return curEle.id === proId});
-  console.log(curPro)
+  let curPro = product.filter((curEle) => { return curEle.id === proId });
 
   return (
     <>

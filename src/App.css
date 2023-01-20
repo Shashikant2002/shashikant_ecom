@@ -707,7 +707,13 @@
 }
 
 /* Tablate 425px width  */
-@media (max-width: 426px) {
+@media (max-width: 460px) {
+  .product_detail .container{
+    flex-direction: column;
+  }
+  .product_detail .container .image, .product_detail .container .content{
+    width: 100%;
+  }
   .product .allProd .prodCard {
     max-width: 90%;
     margin: 10px auto;
